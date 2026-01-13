@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,45 +16,84 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --bg-color: #FFF9E6;
+  --primary-color: #F4E4A6;
+  --accent-color: #D4A574;
+  --highlight-color: #C8102E;
+  --text-color: #2F1B14;
+  --border-color: #E8D5B7;
+  --pasta-gold: #F4E4A6;
+  --olive-green: #6B8E23;
+  --tomato-red: #FF6347;
+  --parmesan-white: #FFF8DC;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1A1611;
+  --primary-color: #3D3426;
+  --accent-color: #8B6914;
+  --highlight-color: #A0001C;
+  --text-color: #F5E6D3;
+  --border-color: #4A3B2A;
+  --pasta-gold: #D4A574;
+  --olive-green: #4A5D23;
+  --tomato-red: #CC4125;
+  --parmesan-white: #E8DCC6;
+}
+
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--olive-green);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--tomato-red);
 }
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: var(--text-color);
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid var(--border-color);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--pasta-gold);
+  color: var(--text-color);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
 }
 button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background-color: var(--olive-green);
+  color: var(--parmesan-white);
+  border-color: var(--olive-green);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(57, 57, 57, 0.3);
 }
 
 @media (prefers-color-scheme: light) {
