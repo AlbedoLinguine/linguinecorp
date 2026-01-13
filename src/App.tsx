@@ -8,7 +8,6 @@ import Mancala from './pages/Menu/Menu Items/Mancala'
 import './App.css'
 
 function App() {
-  const [theme, setTheme] = useState('light')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   
