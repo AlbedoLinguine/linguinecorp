@@ -13,9 +13,10 @@ const UnityApp = () => {
             style={{
                 width: "70vw",
                 aspectRatio: "16 / 9",
+                
             }}
         >
-            <Unity unityProvider={unityProvider} style={{ width: "100%", height: "100%" }} devicePixelRatio={window.devicePixelRatio} />
+            <Unity unityProvider={unityProvider} style={{ width: "100%", height: "100%", background: "black" }} devicePixelRatio={window.devicePixelRatio} />
         </div>
     );
 };

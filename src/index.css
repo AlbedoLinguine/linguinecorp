@@ -62,12 +62,14 @@ a:hover {
 }
 
 body {
+  display: flex;
   margin: 0;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
+  justify-content: center;
 }
 
 h1 {
