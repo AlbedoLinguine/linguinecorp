@@ -6,7 +6,7 @@ const Mancala: React.FC = () => {
     <div>
       <h1>Mancala</h1>
       <UnityApp />
-      <a href="/mancala_rules.pdf" target="_blank">How to play Mancala</a>
+      <a href="/mancala_rules.pdf" target="_blank" style={{ textDecoration: "underline"}}>How to play Mancala</a>
     </div>
   );
 };
