@@ -1,13 +1,10 @@
-import { Helmet } from 'react-helmet-async'
 import './About.css'
 
 function About() {
   return (
     <div className="about">
-      <Helmet>
         <title>About Us - Linguine Corp | Our Story Since 1847</title>
         <meta name="description" content="Learn about Linguine Corp's rich history. Founded in 1847 in Liguria, Italy, we've been crafting authentic Italian pasta for over 175 years using traditional methods and the finest ingredients." />
-      </Helmet>
       <div className="about-header">
         <h1>🇮🇹 About Linguine Corp</h1>
         <p>A story of passion, tradition, and authentic Italian craftsmanship</p>

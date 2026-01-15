@@ -1,14 +1,11 @@
-import { Helmet } from 'react-helmet-async'
 import './Home.css'
 
 function Home() {
 
   return (
     <div className="home">
-      <Helmet>
         <title>Linguine Corp</title>
         <meta name="description" content="Welcome to Linguine Corp, a website crafted with passion to bring you fun experiences." />
-      </Helmet>
       <div className="hero-section">
         <div className="logo-container">
         </div>
