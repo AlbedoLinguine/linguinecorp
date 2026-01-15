@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import './Menu.css'
 
 function Menu() {
   return (
     <div className="menu">
+      <Helmet>
+        <title>Gallery - Linguine Corp</title>
+        <meta name="description" content="Explore our gallery of interactive experiences and games. Discover traditional games and activities from Linguine Corp." />
+      </Helmet>
       <div className="menu-items">
         <Link to="/menu/mancala"><button className="mancala-button">Mancala</button></Link>
       </div>

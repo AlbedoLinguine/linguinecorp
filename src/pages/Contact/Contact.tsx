@@ -1,8 +1,13 @@
+import { Helmet } from 'react-helmet-async'
 import './Contact.css'
 
 function Contact() {
   return (
     <div className="contact">
+      <Helmet>
+        <title>Contact Us - Linguine Corp | Get in Touch</title>
+        <meta name="description" content="Contact Linguine Corp. Visit our headquarters in Genoa, Italy or send us a message. We're here to answer your questions about our authentic Italian pasta products." />
+      </Helmet>
       <div className="contact-header">
         <h1>📞 Contact Us</h1>
         <p>Get in touch with the Linguine Corp family</p>

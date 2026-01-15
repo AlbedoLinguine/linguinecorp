@@ -118,6 +118,26 @@
   border: 4px solid var(--tomato-red);
 }
 
+@media (max-width: 1000px) {
+  .mancala-button {
+    font-size: 3.5rem !important;
+  }
+
+  .mancala-button:hover {
+    font-size: 3.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mancala-button {
+    font-size: 3rem !important;
+  }
+
+  .mancala-button:hover {
+    font-size: 3.3rem !important;
+  }
+}
+
 
 .mancala-button::before {
   content: '';

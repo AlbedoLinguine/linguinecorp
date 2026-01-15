@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import Home from './pages/Home/Home'
 import Menu from './pages/Menu/Menu'
 import About from './pages/About/About'
@@ -21,7 +22,8 @@ function App() {
   }
 
   return (
-    <Router>
+    <HelmetProvider>
+      <Router>
       <div className="app">
         <nav className="navbar">
           <Link to="/" className="navbar-brand">
@@ -62,6 +64,7 @@ function App() {
       </div>
       <div style={{ height: "10vh" }}></div>
     </Router>
+    </HelmetProvider>
   )
 }
 
